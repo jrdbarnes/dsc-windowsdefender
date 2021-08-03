@@ -292,7 +292,110 @@ function Set-TargetResource
 
         [ValidateSet("Disabled","Enabled","AuditMode")]
         [System.String[]]
-        $AttackSurfaceReductionRules_Actions
+        $AttackSurfaceReductionRules_Actions,
+
+        [System.Boolean]
+        $AllowNetworkProtectionDownLevel,
+
+        [ValidateSet("Beta","Broad","NotConfigured","Preview","Staged")]
+        [System.String]
+        $EngineUpdatesChannel,
+
+        [System.Boolean]
+        $AllowDatagramProcessingOnWinServer,
+
+        [System.Boolean]
+        $DisableHttpParsing,
+
+        [System.Boolean]
+        $ForceUseProxyOnly,
+
+        [System.Boolean]
+        $EnableLowCpuPriority,
+
+        [System.Boolean]
+        $DisableDnsParsing,
+
+        [System.String[]]
+        $ProxyBypass,
+
+        [System.String]
+        $SharedSignaturesPath,
+
+        [System.Boolean]
+        $EnableFileHashComputation,
+
+        [System.Boolean]
+        $DisableDatagramProcessing,
+
+        [System.String]
+        $SignatureBlobFileSharesSources,
+
+        [ValidateSet("Disabled","Enabled","AuditMode")]
+        [System.String[]]
+        $PUAProtection,
+
+        [System.Boolean]
+        $EnableDnsSinkhole,
+
+        [System.Boolean]
+        $MeteredConnectionUpdates,
+
+        [System.Boolean]
+        $DisableCpuThrottleOnIdleScans,
+
+        [System.Boolean]
+        $DisableTlsParsing,
+
+        [System.String]
+        $ProxyServer,
+
+        [System.Boolean]
+        $DisableSshParsing,
+
+        [System.String[]]
+        $ExclusionIpAddress,
+
+        [System.String]
+        $ProxyPacUrl,
+
+        [System.Boolean]
+        $AllowNetworkProtectionOnWinServer,
+
+        [System.Boolean]
+        $DisableNetworkProtectionPerfTelemetry,
+
+        [System.UInt32]
+        $SignatureBlobUpdateInterval,
+
+        [System.UInt32]
+        $SchedulerRandomizationTime,
+
+        [System.UInt32]
+        $TrustLabelProtectionStatus,
+
+        [System.Boolean]
+        $DisableInboundConnectionFiltering,
+
+        [ValidateSet("Beta","Broad","NotConfigured","Preview","Staged")]
+        [System.String]
+        $PlatformUpdatesChannel,
+
+        [System.Boolean]
+        $DisableDnsOverTcpParsing,
+
+        [System.Boolean]
+        $EnableFullScanOnBatteryPower,
+
+        [ValidateSet("Broad","NotConfigured","Staged")]
+        [System.String]
+        $SignaturesUpdatesChannel,
+
+        [System.Boolean]
+        $DisableGradualRelease,
+
+        [System.Boolean]
+        $DisableRdpParsing
     )
 
     if (!(PlatformSupported))
@@ -541,7 +644,110 @@ function Test-TargetResource
 
         [ValidateSet("Disabled","Enabled","AuditMode")]
         [System.String[]]
-        $AttackSurfaceReductionRules_Actions
+        $AttackSurfaceReductionRules_Actions,
+
+        [System.Boolean]
+        $AllowNetworkProtectionDownLevel,
+
+        [ValidateSet("Beta","Broad","NotConfigured","Preview","Staged")]
+        [System.String]
+        $EngineUpdatesChannel,
+
+        [System.Boolean]
+        $AllowDatagramProcessingOnWinServer,
+
+        [System.Boolean]
+        $DisableHttpParsing,
+
+        [System.Boolean]
+        $ForceUseProxyOnly,
+
+        [System.Boolean]
+        $EnableLowCpuPriority,
+
+        [System.Boolean]
+        $DisableDnsParsing,
+
+        [System.String[]]
+        $ProxyBypass,
+
+        [System.String]
+        $SharedSignaturesPath,
+
+        [System.Boolean]
+        $EnableFileHashComputation,
+
+        [System.Boolean]
+        $DisableDatagramProcessing,
+
+        [System.String]
+        $SignatureBlobFileSharesSources,
+
+        [ValidateSet("Disabled","Enabled","AuditMode")]
+        [System.String[]]
+        $PUAProtection,
+
+        [System.Boolean]
+        $EnableDnsSinkhole,
+
+        [System.Boolean]
+        $MeteredConnectionUpdates,
+
+        [System.Boolean]
+        $DisableCpuThrottleOnIdleScans,
+
+        [System.Boolean]
+        $DisableTlsParsing,
+
+        [System.String]
+        $ProxyServer,
+
+        [System.Boolean]
+        $DisableSshParsing,
+
+        [System.String[]]
+        $ExclusionIpAddress,
+
+        [System.String]
+        $ProxyPacUrl,
+
+        [System.Boolean]
+        $AllowNetworkProtectionOnWinServer,
+
+        [System.Boolean]
+        $DisableNetworkProtectionPerfTelemetry,
+
+        [System.UInt32]
+        $SignatureBlobUpdateInterval,
+
+        [System.UInt32]
+        $SchedulerRandomizationTime,
+
+        [System.UInt32]
+        $TrustLabelProtectionStatus,
+
+        [System.Boolean]
+        $DisableInboundConnectionFiltering,
+
+        [ValidateSet("Beta","Broad","NotConfigured","Preview","Staged")]
+        [System.String]
+        $PlatformUpdatesChannel,
+
+        [System.Boolean]
+        $DisableDnsOverTcpParsing,
+
+        [System.Boolean]
+        $EnableFullScanOnBatteryPower,
+
+        [ValidateSet("Broad","NotConfigured","Staged")]
+        [System.String]
+        $SignaturesUpdatesChannel,
+
+        [System.Boolean]
+        $DisableGradualRelease,
+
+        [System.Boolean]
+        $DisableRdpParsing
     )
 
     if (!(PlatformSupported))

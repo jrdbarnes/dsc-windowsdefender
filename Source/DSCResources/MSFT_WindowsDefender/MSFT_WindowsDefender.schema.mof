@@ -1,4 +1,3 @@
-
 [ClassVersion("0.1.0.0"), FriendlyName("WindowsDefender")]
 class MSFT_WindowsDefender : OMI_BaseResource
 {
@@ -66,5 +65,38 @@ class MSFT_WindowsDefender : OMI_BaseResource
     [Write, Description("Specifies an array of folder paths to add to guarded list for guard my folders feature.")] String ControlledFolderAccessProtectedFolders[];
     [Write, Description("Specifies an array of Attack Surface Reduction Rule(ASR) Ids. The rule Ids need to be in the same order as their respective actions specified in the AttackSurfaceReductionRules_Actions property.")] String AttackSurfaceReductionRules_Ids[];
     [Write, Description("Configure Attack Surface Reduction Rule(ASR) actions. The actions need to be in the same order as their respective rule Ids specified in the AttackSurfaceReductionRules_Ids property."), ValueMap{"Disabled","Enabled","AuditMode"}, Values{"Disabled","Enabled","AuditMode"}] String AttackSurfaceReductionRules_Actions[];
+    [Write, Description("Allow Network Protection Down Level")] boolean AllowNetworkProtectionDownLevel;
+    [Write, Description("Specifies when devices receive Microsoft Defender engine updates during the monthly gradual rollout"), ValueMap{"Beta","Broad","NotConfigured","Preview","Staged"}, Values{"Beta","Broad","NotConfigured","Preview","Staged"}] String EngineUpdatesChannel;
+    [Write, Description("Allow Datagram Processing On WinServer")] boolean AllowDatagramProcessingOnWinServer;
+    [Write, Description("Disable Http Parsing")] boolean DisableHttpParsing;
+    [Write, Description("Force Use Proxy Only")] boolean ForceUseProxyOnly;
+    [Write, Description("Enable Low Cpu Priority")] boolean EnableLowCpuPriority;
+    [Write, Description("Disable Dns Parsing")] boolean DisableDnsParsing;
+    [Write, Description("Specifies Proxy Bypass")] String ProxyBypass[];
+    [Write, Description("Shared Signatures Path")] String SharedSignaturesPath;
+    [Write, Description("Enable File Hash Computation")] boolean EnableFileHashComputation;
+    [Write, Description("Disable Datagram Processing")] boolean DisableDatagramProcessing;
+    [Write, Description("Signature Blob File Shares Sources")] String SignatureBlobFileSharesSources;
+    [Write, Description("Configure the PUA Protection feature."), ValueMap{"Disabled","Enabled","AuditMode"}, Values{"Disabled","Enabled","AuditMode"}] String PUAProtection;
+    [Write, Description("Enable Dns Sinkhole")] boolean EnableDnsSinkhole;
+    [Write, Description("Metered Connection Updates")] boolean MeteredConnectionUpdates;
+    [Write, Description("Disable Cpu Throttle On Idle Scans")] boolean DisableCpuThrottleOnIdleScans;
+    [Write, Description("Disable Tls Parsing")] boolean DisableTlsParsing;
+    [Write, Description("Proxy Server")] String ProxyServer;
+    [Write, Description("Disable Ssh Parsing")] boolean DisableSshParsing;
+    [Write, Description("Array of Exclusion IpAddresses")] String ExclusionIpAddress[];
+    [Write, Description("Proxy Pac Url")] String ProxyPacUrl;
+    [Write, Description("Allow Network Protection On WinServer")] boolean AllowNetworkProtectionOnWinServer;
+    [Write, Description("Disable Network Protection Perf Telemetry")] boolean DisableNetworkProtectionPerfTelemetry;
+    [Write, Description("Specifies the number of minutes Signature Blob Update Interval")] uint32 SignatureBlobUpdateInterval;
+    [Write, Description("Specifies the number of minutes Scheduler Randomization Time")] uint32 SchedulerRandomizationTime;
+    [Write, Description("Trust Label Protection Status")] uint32 TrustLabelProtectionStatus;
+    [Write, Description("Disable Inbound Connection Filtering")] boolean DisableInboundConnectionFiltering;
+    [Write, Description("Specifies when devices receive Microsoft Defender Platform updates during the monthly gradual rollout"), ValueMap{"Beta","Broad","NotConfigured","Preview","Staged"}, Values{"Beta","Broad","NotConfigured","Preview","Staged"}] String PlatformUpdatesChannel;
+    [Write, Description("Disable Dns Over Tcp Parsing")] boolean DisableDnsOverTcpParsing;
+    [Write, Description("Enable Full Scan On Battery Power")] boolean EnableFullScanOnBatteryPower;
+    [Write, Description("Specifies when devices receive Microsoft Defender Platform updates during the monthly gradual rollout"), ValueMap{"Broad","NotConfigured","Staged"}, Values{"Broad","NotConfigured","Staged"}] String SignaturesUpdatesChannel;
+    [Write, Description("Disable Gradual Release")] boolean DisableGradualRelease;
+    [Write, Description("Disable Rdp Parsing")] boolean DisableRdpParsing;
 };
 
