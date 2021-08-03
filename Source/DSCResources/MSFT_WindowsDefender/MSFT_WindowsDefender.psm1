@@ -27,7 +27,7 @@ function Get-TargetResource
     $PreferenceNames = $Preferences | Get-Member -MemberType Property | ? {$_.Name -notin $ExcludeName} | % Name
 
     #Initialize Hashtable
-    $ReturnHash = @()
+    $ReturnHash = @{}
 
     foreach ($PreferenceName in $PreferenceNames)
     {
